@@ -11,6 +11,11 @@ function handleSubmit(event) {
     alert("Todos los espacios deben ser rellenados");
   }
 
-  console.log(`email: ${email.value}, Password: ${password.value}`);
+  const user = {
+    UserEmail: email.value,
+    UserPassword: password.value,
+  };
+
+  console.log(user);
   event.currentTarget.reset();
 }
